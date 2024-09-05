@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TesteDeSoma(t *testing.T) { //convensão de nomes ShouldSumCorrect (assinatura do método)
+func ShouldSomaCorrect(t *testing.T) { //convensão de nomes ShouldSumCorrect (assinatura do método)
 	//arrange
 	teste := soma(10, 50, 15)
 	//act
@@ -12,50 +12,50 @@ func TesteDeSoma(t *testing.T) { //convensão de nomes ShouldSumCorrect (assinat
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeSoma02(t *testing.T) { //ShouldSumIncorrect
+func ShouldSomaIncorrect(t *testing.T) { //ShouldSumIncorrect
 	teste := soma(10, 50, 15) //arrange
 	resultado := 7            //act
 	if teste != resultado {   //assert
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeMultiplicacao(t *testing.T) {
-	teste := multiplica(5, 20)
+func ShouldMultiCorret(t *testing.T) {
+	teste := multiplicar(5, 20)
 	resultado := 100
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeMultiplicacao2(t *testing.T) {
-	teste := multiplica(5, 20)
+func ShouldMultiIncorret(t *testing.T) {
+	teste := multiplicar(5, 20)
 	resultado := 2560
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeSubtracao(t *testing.T) {
-	teste := subtrai(88, 100)
+func ShouldSubtraCorret(t *testing.T) {
+	teste := subtrair(88, 100)
 	resultado := -5
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeSubtracao2(t *testing.T) {
-	teste := subtrai(88, 100)
+func ShouldSubtraIncorret(t *testing.T) {
+	teste := subtrair(88, 100)
 	resultado := 5
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeDivisao(t *testing.T) {
-	teste := divide(10)
+func ShouldDivisaoCorret(t *testing.T) {
+	teste := divisao(10)
 	resultado := 5
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
 	}
 }
-func TesteDeDivisao2(t *testing.T) {
-	teste := divide(10)
+func ShouldDivisaoIncorret(t *testing.T) {
+	teste := divisao(10)
 	resultado := 10
 	if teste != resultado {
 		t.Error("Valor esperado:", resultado, "Valor retornado:", teste)
