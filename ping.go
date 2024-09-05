@@ -8,7 +8,6 @@ import (
 func ping(c chan string) {
 	for i := 0; ; i++ {
 		c <- "ping"
-
 	}
 }
 func pong(c chan string) {
